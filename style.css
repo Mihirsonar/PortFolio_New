@@ -1,0 +1,179 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Scroll-bar */
+::-webkit-scrollbar {
+  width: 0.25rem;
+}
+::-webkit-scrollbar-track {
+  background: gray;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(191, 79, 79);
+}
+
+/* Sections */
+section {
+  padding: 5rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Buttons */
+.main-btn {
+  display: inline-block;
+  font-weight: 500;
+  line-height: 3rem;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.625rem 1.87rem rgb(118 85 225 / 30%);
+  border: double 0.124rem transparent;
+  padding: 0 2.6rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.primary-btn {
+  background-image: linear-gradient(#0e1c26, #2a454b, #294861);
+  color: aliceblue;
+}
+
+.primary-btn:hover {
+  border-color: rgb(188, 153, 221);
+  background: whitesmoke;
+  color: #0e1c26;
+  box-shadow: none;
+}
+
+/* Navbar */
+.navbar {
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar a {
+  font-weight: bold;
+  margin: 1rem;
+  text-transform: uppercase;
+}
+
+.header-wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* Light/Dark Mode Styles */
+body.white {
+  background-color: white;
+  color: black;
+}
+
+body.white .navbar {
+  background-color: white;
+}
+
+body.white .navbar a {
+  color: black;
+}
+
+body.white .nav-link:hover {
+  color: rgb(55, 90, 78);
+}
+
+body.black {
+  background-color: black;
+  color: white;
+}
+
+body.black .navbar {
+  background-color: black;
+}
+
+body.black .navbar a {
+  color: white;
+}
+
+body.black .nav-link:hover {
+  color: lightgray;
+}
+
+/* Banner Section */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.banner-wrapper .banner-content {
+  vertical-align: middle;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.banner-wrapper img {
+  margin-top: 4rem;
+}
+
+/* About Section */
+.about-wrapper p {
+  font-size: 3rem;
+}
+
+.about-wrapper img {
+  border-radius: 50%;
+}
+
+/* Project Section */
+.project-wrapper .card {
+  margin: 0.5rem;
+  align-items: center;
+}
+
+.Some-margin img {
+  margin-top: 10px;
+}
+
+.project {
+  text-align: center;
+  margin: 1rem;
+  font-size: larger;
+}
+
+/* Contact Section */
+.Contact {
+  text-align: center;
+  margin: 2rem;
+  font-size: larger;
+}
+
+/* Social Section */
+.social-icon {
+  margin-top: 2rem;
+}
+
+.social-icon li {
+  margin: 1rem;
+}
+
+.social-icon li a {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: center;
+  margin: 0 0.7rem;
+}
+
+/* Circular Image */
+.img-fluid {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
